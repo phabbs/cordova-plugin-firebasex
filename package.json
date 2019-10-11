@@ -22,10 +22,7 @@
     "ecosystem:cordova",
     "cordova-android",
     "cordova-ios",
-    "firebase",
-    "push",
-    "notifications",
-    "phone auth"
+    "firebase"
   ],
   "scripts": {
     "version": "node ./bump-version.js && git add -A plugin.xml",
