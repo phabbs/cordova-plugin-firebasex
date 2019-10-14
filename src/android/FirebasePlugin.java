@@ -109,12 +109,6 @@ public class FirebasePlugin extends CordovaPlugin {
     }
 
     @Override
-    public void onReset() {
-        FirebasePlugin.notificationCallbackContext = null;
-        FirebasePlugin.tokenRefreshCallbackContext = null;
-    }
-
-    @Override
     public void onDestroy() {
         instance = null;
         cordovaActivity = null;
@@ -267,14 +261,12 @@ public class FirebasePlugin extends CordovaPlugin {
     protected static void handleExceptionWithContext(Exception e, CallbackContext context){
         String msg = e.toString();
         Log.e(TAG, msg);
-        Crashlytics.log(msg);
         context.error(msg);
     }
 
     protected static void handleExceptionWithoutContext(Exception e){
         String msg = e.toString();
         Log.e(TAG, msg);
-        Crashlytics.log(msg);
         if(instance != null){
             instance.logErrorToWebview(msg);
         }
