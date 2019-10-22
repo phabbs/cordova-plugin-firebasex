@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dpa99c/cordova-plugin-firebase"
+    "url": "git+https://github.com/phabbs/cordova-plugin-firebasex.git"
   },
   "cordova": {
     "id": "cordova-plugin-firebase",
