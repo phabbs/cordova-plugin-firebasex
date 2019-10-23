@@ -96,7 +96,7 @@
 			<pods use-frameworks="true">
 				<pod name="Firebase/Core" spec="6.9.0"/>
 				<pod name="Firebase/Auth" spec="6.9.0"/>
-				<pod name="Firebase/Performance" spec="6.9.0"/>
+				<pod name="Firebase/Performance"/>
 			</pods>
 		</podspec>
 
