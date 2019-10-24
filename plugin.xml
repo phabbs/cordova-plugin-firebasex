@@ -60,9 +60,6 @@
 	</platform>
 
 	<platform name="ios">
-		<!-- <hook type="after_plugin_install" src="scripts/ios/after_plugin_install.js" />
-		<hook type="before_plugin_uninstall" src="scripts/ios/before_plugin_uninstall.js" /> -->
-
 		<js-module name="FirebasePlugin" src="www/firebase.js">
 			<clobbers target="FirebasePlugin" />
 		</js-module>
@@ -93,14 +90,12 @@
 			<config>
 				<source url="https://github.com/CocoaPods/Specs.git"/>
 			</config>
-			<pods use-frameworks="true">
+			<!-- <pods use-frameworks="true">
 				<pod name="Firebase/Core" spec="6.9.0"/>
 				<pod name="Firebase/Auth" spec="6.9.0"/>
-				<pod name="Firebase/Performance" spec="6.3.0"/>
-			</pods>
+				<pod name="Firebase/Performance" spec="6.9.0"/>
+			</pods> -->
 		</podspec>
 
 	</platform>
-
-	<!-- <hook type="after_prepare" src="scripts/after_prepare.js" /> -->
 </plugin>
