@@ -90,7 +90,7 @@
 			<config>
 				<source url="https://github.com/CocoaPods/Specs.git"/>
 			</config>
-			<pods use-frameworks="true">
+			<pods>
 				<pod name="Firebase/Core" spec="~>6.9.0"/>
 				<pod name="Firebase/Auth" spec="~>6.9.0"/>
 				<pod name="Firebase/Performance" spec="~>6.9.0"/>
