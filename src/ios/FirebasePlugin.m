@@ -17,9 +17,6 @@ static FirebasePlugin *firebasePlugin;
 - (void)pluginInitialize {
     NSLog(@"Starting Firebase plugin");
     firebasePlugin = self;
-    
-    // Check for permission and register for remote notifications if granted
-    [self _hasPermission:^(BOOL result) {}];
 }
 
 
