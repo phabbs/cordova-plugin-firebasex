@@ -10,7 +10,7 @@ interface IChannelOptions {
     visibility?: -1 | 0 | 1
 }
 
-interface FirebasePlugin {
+interface FirebasePerformancePlugin {
     getToken(success: (value: string) => void, error: (err: string) => void): void
     onTokenRefresh(success: (value: string) => void, error: (err: string) => void): void
     getAPNSToken(success: (value: string) => void, error: (err: string) => void): void
@@ -56,4 +56,4 @@ interface FirebasePlugin {
     incrementCounter(name: string, counterName: string, success: () => void, error: (err: string) => void): void
     stopTrace(name: string): void
 }
-declare var FirebasePlugin: FirebasePlugin; 
+declare var FirebasePerformancePlugin: FirebasePerformancePlugin; 
